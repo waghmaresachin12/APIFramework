@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!--thread-count is too tell how many browser to be open for parallel run-->
+<!--Project name in suite name-->
+<!--verbose is for better logs-->
+<suite name="API Regression Test Suite" verbose="4">
+
+    <!--    we need to add listeners to get Reports-->
+    <listeners>
+        <listener class-name="com.aventstack.chaintest.plugins.ChainTestListener"></listener>
+    </listeners>
+
+
+    <!-- It is good practice to have separate class in separate test, don't add all classes in single test -->
+    <test name="Go Rest API Test - Get User">
+        <classes>
+            <class name="com.qa.api.gorest.tests.GetUserTest" />
+        </classes>
+    </test>
+
+    <test name="Go Rest API Test - Create User">
+        <classes>
+            <class name="com.qa.api.gorest.tests.CreateUserTest" />
+        </classes>
+    </test>
+
+    <test name="Go Rest API Test - Update User">
+        <classes>
+            <class name="com.qa.api.gorest.tests.UpdateUserTest" />
+        </classes>
+    </test>
+
+    <test name="Go Rest API Test - Delete User">
+        <classes>
+            <class name="com.qa.api.gorest.tests.DeleteUserTest" />
+        </classes>
+    </test>
+
+    <test name="Product API Test - Get Product">
+        <classes>
+            <class name="com.qa.api.products.tests.ProductAPITest" />
+        </classes>
+    </test>
+
+    <test name="Product API Test - Get Product with json path">
+        <classes>
+            <class name="com.qa.api.products.tests.ProductsAPITestWithJsonPath" />
+        </classes>
+    </test>
+
+
+    <test name="Schema Test">
+        <classes>
+            <class name="com.qa.api.schema.tests.GoRestUserAPISchemaTest" />
+        </classes>
+    </test>
+
+</suite>

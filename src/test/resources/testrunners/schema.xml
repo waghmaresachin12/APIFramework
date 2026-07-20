@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!--thread-count is too tell how many browser to be open for parallel run-->
+<!--Project name in suite name-->
+<!--verbose is for better logs-->
+<suite name="Schema Test Suite" verbose="4">
+
+    <!--    we need to add listeners to get Reports-->
+    <listeners>
+        <!--        <listener class-name="com.aventstack.chaintest.plugins.ChainTestListener"></listener>-->
+    </listeners>
+
+    <test name="Schema Test">
+        <classes>
+            <class name="com.qa.api.schema.tests.GoRestUserAPISchemaTest" />
+        </classes>
+    </test>
+
+</suite>
