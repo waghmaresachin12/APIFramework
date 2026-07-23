@@ -139,8 +139,6 @@
                 </configuration>
             </plugin>
 
-
-            <!-- Interview Q - Which plugin in mvn to run the test cases & i.e. maven-surefire-plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
