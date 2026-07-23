@@ -149,11 +149,11 @@
                     <reuseForks>true</reuseForks>
                     <suiteXmlFiles>
                         <!--Below one uncomment when pipeline not required as it is hardcoded -->
-<!--                        <suiteXmlFile>src/test/resources/testrunners/testng_regression.xml</suiteXmlFile>-->
+                        <suiteXmlFile>src/test/resources/testrunners/testng_regression.xml</suiteXmlFile>
 
                         <!--Below one is for pipeline which is dynamic value of xml path, that time uncomment -->
                         <!--suppress UnresolvedMavenProperty -->
-                         <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+                        <!--   <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>-->
                     </suiteXmlFiles>
 
                 </configuration>
